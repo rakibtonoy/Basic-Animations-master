@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BasicAnimationsMain" >
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:background="#c0000000"
+        android:weightSum="4" >
+
+        <Button
+            android:id="@+id/scaleButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:textSize="15sp"
+            android:text="@string/scale" />
+
+        <Button
+            android:id="@+id/translateButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:textSize="15sp"
+            android:text="@string/translate" />
+
+        <Button
+            android:id="@+id/rotateButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:textSize="15sp"
+            android:text="@string/rotate" />
+
+        <Button
+            android:id="@+id/alphaButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:textSize="15sp"
+            android:text="@string/alpha" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/animationPicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/android_icon" />
+
+    <TextView
+        android:id="@+id/animationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/animationPicture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

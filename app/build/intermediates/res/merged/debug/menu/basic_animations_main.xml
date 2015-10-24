@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_stop"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/stop"/>
+
+</menu>
+<!-- From: file:/C:/Users/Rakib/AndroidStudioProjects/Basic-Animations-master/app/src/main/res/menu/basic_animations_main.xml -->
